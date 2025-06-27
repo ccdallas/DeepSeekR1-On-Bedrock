@@ -1,41 +1,64 @@
-# DeepSeek-R1 on Bedrock
+# 🏥 Hacking Healthcare: My PNPT Prep Diary
 
-This repository will guide you through the process of importing and using the distilled **DeepSeek-R1-Distill-Llama-8B** model based on **Llama-3.1-8B** as the base model from [Hugging Face](https://huggingface.co/deepseek-ai/DeepSeek-R1) on [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html). 
+Welcome to my PNPT (Practical Network Penetration Tester) prep journal — where ethical hacking meets emergency medicine. I'm documenting my journey to the PNPT exam while focusing on securing healthcare systems, medical IoT devices, and sports tech environments.
 
-To learn more about DeepSeek-R1, please visit [DeepSeek](https://www.deepseek.com).
+## 🔍 About Me
 
-For detailed paper walkthrough on DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning, check out this paper read on DeepSeek-R1 by [Umar Jamil](https://www.youtube.com/watch?v=XMnxKGVnEUc&t=2421s)
+Hi, I’m Chaunda — former ER night shift lead, now ethical hacker. I protect what matters: patients, players, and performance. This repo reflects how I blend 20+ years in healthcare with cybersecurity strategy and red teaming skills.
 
+## 🎯 PNPT Goal
 
-![DeepSeek-R1-Distill-Llama-8B](imgs/img4.png)
+- **Target Exam Date:** [Fill in]
+- **Training:** TCM Security – Practical Ethical Hacking + OSINT + AD Labs
+- **Focus Areas:** Active Directory, Privilege Escalation, OSINT, Medical Device Exploits
 
-## Prerequisites
+---
 
-- AWS Account with Bedrock access
-- Python environment with the following packages:
-  - `huggingface_hub`
-  - `boto3`
+## 📚 Study Log
 
-## Setup Process
+| Date | Activity | Notes |
+|------|----------|-------|
+| 06/27 | Started `Practical Ethical Hacking` | Reviewed networking fundamentals |
+| 06/28 | TryHackMe: AD Lab | Practiced Kerberoasting & enumeration |
+| ... | ... | ... |
 
-1. **Download Model Weights**
-   - The model weights are downloaded from Hugging Face Hub
-   - Model used: `deepseek-ai/DeepSeek-R1-Distill-Llama-8B`
+---
 
-2. **Upload to S3**
-   - Model weights are uploaded to an S3 bucket
-   - Target path: `s3://[your-bucket]/models/DeepSeek-R1-Distill-Llama-8B/`
+## 🔐 Tools I’m Using
 
-3. **Import to Amazon Bedrock**
-   - Navigate to AWS Console > Bedrock > Foundation Models > Imported Models
-   - Click "Import Model"
-   - Name the model (e.g., `my-DeepSeek-R1-Distill-Llama-8B`)
-   - Provide the S3 location of the model weights
-   - Wait for successful import
-   - Note down the Model ARN for API calls
+- 🖥️ **Kali Linux** + VM setup
+- 🧠 **TryHackMe** / **Hack The Box**
+- 🧰 **Impacket**, **BloodHound**, **Burp Suite**, **CrackMapExec**
+- 📋 Custom scripts and recon tools (see `/tools` folder)
 
-![Import Model](imgs/img2.png)
+---
 
-## Usage
+## 🧪 Labs & Writeups
 
-Run the Jupyter notebook [`deepseek-bedrock.ipynb`](deepseek-bedrock.ipynb) for detailed implementation
+- [x] TryHackMe – Active Directory Basics  
+- [ ] Hack The Box – Starting Point Series  
+- [ ] VulnHub – Legacy Medical VM  
+- [ ] Custom lab: IV Pump Attack Simulation (*coming soon*)
+
+---
+
+## ✍🏽 Sample Reports
+
+📄 **Red Team Report: “Attack on Medical IoT”** — Coming Soon  
+📄 **Pentest Walkthroughs** — `/writeups`
+
+---
+
+## 🧠 GitHub Goals
+
+✅ Build a public-facing learning journal  
+✅ Contribute to healthcare hacking use cases  
+✅ Inspire career changers, clinicians, and future pentesters  
+
+---
+
+## ☕ Let’s Connect
+
+- 🖥️ [Website](https://chaundadallas.com)
+- 🧠 [LinkedIn](https://linkedin.com/in/chaundadallas)
+- ✍🏽 [Substack](https://your-substack-link) – *“Hacking Healthcare” Prep Diary*
